@@ -1,0 +1,265 @@
+html, body {
+    margin: 0px;
+      /* background-color: rgb(26, 26, 26); */
+      scroll-behavior: smooth;
+  }
+
+h1{
+    top: 2%;
+    position: absolute;
+    right: 40px;
+    font-family: "rowdy", sans-serif;
+    font-size: 100px;
+}
+
+h1.active{
+    opacity: 1;
+	filter: blur(0);
+}
+
+
+button{
+    font-family: "poster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: .15rem;
+    padding: .80rem 1.25rem;
+    font-size: 30px;
+    cursor: pointer;
+    border: 0px;
+    /* margin-top: 3%; */
+    margin-left: 4%;
+    
+    scale: 90%;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    color: black;
+    stroke: 10px;    
+    right: 0;
+    
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color:white;
+      z-index: -2;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background-color: black;
+      transition: all .3s;
+      z-index: -1;
+    }
+    &:hover {
+      color: #fff;
+      &:before {
+        width: 100%;
+      }
+    }
+    }
+    
+.nextStage{
+    /* position: relative; */
+    top: 15vh;
+    left: 65%;
+    z-index: 1;
+}
+
+.goBack{
+    top: 15vh;
+    left: -45%;
+    z-index: 1;    
+}
+
+strong{
+    color: goldenrod;
+}
+.day{
+    top: 25%;
+    height: 100vh;
+    position: absolute;
+    display: fixed;
+    scale: 115%;
+    height: auto;
+    width: auto;
+}
+.day1{
+    filter: blur(30px);
+	opacity: 0;
+	transition: filter 1s ease, opacity 0.6s ease;
+    padding: 0;
+}
+
+.day1.active{
+	opacity: 1;
+	filter: blur(0);
+}
+
+.day1_H{
+    position: absolute;
+    top: 47%;
+    left: 75%;
+    transform: translate(100%, -300%);
+
+    /* margin-left: 70px;
+    right: 45x;
+    margin-top: 5%; */
+    font-size: 40px;
+    font-family: "poster", sans-serif;
+    font-weight: 400;
+    color: goldenrod;
+}
+
+p{
+    position: absolute;
+    top: 36%;
+    left: 48%;
+    transform: translate(75%, -0%);
+    width: 350px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    font-size: 0.8rem;
+    line-height: 145%;
+    background-color: rgba(255, 255, 255, 0.49);
+    height: 140px;
+    width: 350px;
+    padding: 1% ;
+    /* padding: 20px; */
+}
+.day2{
+    position: relative;
+    top: -40px;
+    filter: blur(30px);
+	opacity: 0;
+	transition: filter 1s ease, opacity 0.6s ease;
+}
+
+.day2.active{
+	opacity: 1;
+	filter: blur(0);
+}
+
+.day2_H{
+    position: absolute;
+    top: 8%;
+    left: 68%;
+    transform: translate(100%, 300%);
+
+    /* margin-left: 70px;
+    right: 45x;
+    margin-top: 5%; */
+    font-size: 40px;
+    font-family: "poster", sans-serif;
+    font-weight: 400;
+    color: goldenrod;
+
+    }
+    
+
+.day3{
+    position: relative;
+    top: -60px;
+    filter: blur(30px);
+    opacity: 0;
+    transition: filter 1s ease, opacity 0.6s ease;
+}
+
+.day3.active{
+    opacity: 1;
+    filter: blur(0);
+}
+
+
+.day3_H{
+    position: absolute;
+    top: 12%;
+    left: 79%;
+    transform: translate(100%, 300%);
+
+    /* margin-left: 70px;
+    right: 45x;
+    margin-top: 5%; */
+    font-size: 40px;
+    font-family: "poster", sans-serif;
+    font-weight: 400;
+    color: goldenrod;
+
+    }
+
+
+.day4{
+    position: relative;
+    filter: blur(30px);
+    opacity: 0;
+    transition: filter 1s ease, opacity 0.6s ease;
+    padding: 0;
+    scale: 100%;
+    top: 3%;
+
+}
+
+.day4.active{
+    opacity: 1;
+    filter: blur(0);
+}
+
+.day4_H{
+    /* scale: 100%; */
+    position: absolute;
+    top: 47%;
+    left: 70%;
+    transform: translate(100%, -300%);
+
+    /* margin-left: 70px;
+    right: 45x;
+    margin-top: 5%; */
+    font-size: 40px;
+    font-family: "poster", sans-serif;
+    font-weight: 400;
+    color: goldenrod;
+}
+
+.day5{
+    position: relative;
+    /* left: 5%; */
+    filter: blur(30px);
+    opacity: 0;
+    transition: filter 1s ease, opacity 0.6s ease;
+    padding: 0;
+}
+
+.day5img{
+    position: relative;
+    left: 5%;
+}
+.day5.active{
+    opacity: 1;
+    filter: blur(0);
+}
+
+.day5_H{
+    /* scale: 100%; */
+    position: absolute;
+    top: 46%;
+    left: 82%;
+    transform: translate(100%, -300%);
+    /* margin-left: 70px;
+    right: 45x;
+    margin-top: 5%; */
+    font-size: 40px;
+    font-family: "poster", sans-serif;
+    font-weight: 400;
+    color: goldenrod;
+    }
+
