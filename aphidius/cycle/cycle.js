@@ -45,12 +45,12 @@ $(window).scroll(function() {
         $('.day4').removeClass('active');
     }
 
-    if ($(this).scrollTop() > 2850 ) {
+    if ($(this).scrollTop() > 2550 ) {
         $('.day4').removeClass('active');
     }
 
 
-    if ($(this).scrollTop() > 2800) {
+    if ($(this).scrollTop() > 2500) {
         $('.day5').addClass('active');
     } else {
         $('.day5').removeClass('active');
